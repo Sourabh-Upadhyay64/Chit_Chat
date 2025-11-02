@@ -76,7 +76,7 @@ function  Login()  {
        </form>
        <p className="text-sm text-center text-gray-600">
         Don't have an accout?{''}
-        <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
+        <a href="/signup" className="font-medium text-blue-600 hover:text-blue-500">
           Sign Up
         </a>
        </p>
