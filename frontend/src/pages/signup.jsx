@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import Logo from '../components/ui/logo';
 const SignUp = () => {
     const [name , setName]=useState('');
     const [email , setEmail]=useState('');
@@ -12,7 +12,7 @@ const SignUp = () => {
     <div className='align-middle justify-center flex items-center'>
       <div className='w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md '>
         <div className='text-center'>
-
+        <Logo />
         <h3 className='mt-4 text-3xl font-bold text-gray-900'>
           Welcome to Chit Chat 
           </h3>
