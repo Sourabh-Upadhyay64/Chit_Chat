@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../components/ui/logo';
 const SignUp = () => {
     const [name , setName]=useState('');
@@ -80,6 +81,12 @@ const SignUp = () => {
              </button>
       </div>
        </form>
+       <p className="text-sm text-center text-gray-600">
+        Already have an account?{' '}
+        <Link to="/login" className="font-medium text-blue-600 hover:text-blue-500">
+          Sign In
+        </Link>
+       </p>
   
           
 

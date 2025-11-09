@@ -1,6 +1,6 @@
 import React , {useState} from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../components/ui/logo';
-import Signup from './signup'
 function  Login()  {
 
   const [email,setEmail]=useState('');
@@ -19,14 +19,14 @@ function  Login()  {
           Welcome to Chit Chat 
           </h3>
 
-          <p clasName="mt-2 text-sm text-gray-600">
+          <p className="mt-2 text-sm text-gray-600">
             Sign in to continue
           </p>
           </div>
           <form className="space-y-6" onSubmit={handleSubmit}>
          <div >
           <label 
-          htmlfor="email" className="block text-sm font-medium text-gray-700">
+          htmlFor="email" className="block text-sm font-medium text-gray-700">
             Email Address
           </label>
           <input 
@@ -36,16 +36,16 @@ function  Login()  {
              required
              value={email}
              onChange={(e)=> setEmail(e.target.value)} 
-             className="w-full px-3 py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" 
+             className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" 
              placeholder="you@example.com" />
             </div>
             <div>
-              <lable 
+              <label 
               htmlFor="password"
-              classname="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-gray-700"
               >
                 Password
-              </lable>
+              </label>
               <input
               name="password"
               type="password"
@@ -58,9 +58,9 @@ function  Login()  {
               />
               </div>
               <div className="text-sm text-right">
-                <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
+                <Link to="#" className="font-medium text-blue-600 hover:text-blue-500">
                   Forgot your Password?
-                </a>
+                </Link>
               </div>
               <div>
           <button 
@@ -72,10 +72,10 @@ function  Login()  {
       </div>
        </form>
        <p className="text-sm text-center text-gray-600">
-        Don't have an accout?{''}
-        <a href={<Signup />} className="font-medium text-blue-600 hover:text-blue-500">
+        Don't have an account?{' '}
+        <Link to="/signup" className="font-medium text-blue-600 hover:text-blue-500">
           Sign Up
-        </a>
+        </Link>
        </p>
     </div>
     </div>

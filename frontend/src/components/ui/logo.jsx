@@ -6,8 +6,8 @@ const logo = () => {
     <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="loveChat" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#ff4b6e; stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#ff8fb1; stop-opacity:1" />
+      <stop offset="0%" style={{ stopColor: '#ff4b6e', stopOpacity: 1 }} />
+      <stop offset="100%" style={{ stopColor: '#ff8fb1', stopOpacity: 1 }} />
     </linearGradient>
   </defs>
 
